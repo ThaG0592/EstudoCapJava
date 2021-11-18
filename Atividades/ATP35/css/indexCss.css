@@ -1,0 +1,16 @@
+h1{
+    background: gray;
+    color:white; 
+    text-align: center;
+}
+div{
+    background: rgb(173, 173, 173);
+    color: white;
+    text-align: center;
+    margin: 50px auto 50px;
+    width: 30%;
+
+}
+tbody{
+    color: white;
+}

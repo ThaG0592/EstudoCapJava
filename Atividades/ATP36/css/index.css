@@ -1,0 +1,35 @@
+body{
+   background: black; 
+}
+header{
+    padding: 5px 2%;
+    width: 96%;
+    background: gray;
+    height: 80px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+#logo{
+    width: 70px;
+    font-size: 18px;
+    text-align: center;
+}
+#logo a{
+    color: #fff;
+    text-decoration: none;
+}
+#texto{
+    width: 70px;
+    font-size: 18px;
+    text-align: center;
+}
+#texto a{
+    color: yellow;
+    text-decoration: none;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
