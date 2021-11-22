@@ -12,7 +12,7 @@ public class Produto extends HttpServlet {
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         PrintWriter out = resp.getWriter();
-        out.println("Categoria");
+        out.println("Produto");
     }
     
 }
