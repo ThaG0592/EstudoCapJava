@@ -3,6 +3,7 @@
         <title>Categorias</title>
     </head>
     <body>
-        <h2>Hello World!</h2>
+        <a href="/atp53/Categoria">Categoria</a>
+        <a href="/atp53/Produto">Produto</a>
     </body>
 </html>
