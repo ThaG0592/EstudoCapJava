@@ -1,9 +1,7 @@
 <html>
-    <head>
-        <title>Categorias</title>
-    </head>
     <body>
-        <a href="/vendas-1/produto">Produto</a>
-        <a href="/vendas-1/categoria">categoria</a>
+        <h2>Sistema de vendas</h2>
+        <a href="/vendas-1/categoria.jsp">Categoria</a> <br />
+        <a href="/vendas-1/produto.jsp">Produto</a>
     </body>
 </html>
