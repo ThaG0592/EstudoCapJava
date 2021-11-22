@@ -1,0 +1,4 @@
+com\forms\atp55\models\Categoria.class
+com\forms\atp55\models\Produto.class
+com\forms\atp55\servlets\CategoriaServelet.class
+com\forms\atp55\servlets\ProdutoServelet.class
