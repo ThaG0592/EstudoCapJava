@@ -16,7 +16,7 @@ import jakarta.servlet.http.HttpServletResponse;
 public class CategoriaServlents extends HttpServlet {
 
     @Override
-    protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost (HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Categoria cat1 = new Categoria();
 
         cat1.setNome(req.getParameter("nome"));
@@ -25,5 +25,6 @@ public class CategoriaServlents extends HttpServlet {
         PrintWriter out = resp.getWriter();
         out.printf("Modulo Categoria -- CategoriaModel = %s - %s", cat1.getNome(), cat1.getDescricao() );
     }
+   
     
 }
