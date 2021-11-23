@@ -1,0 +1,4 @@
+com\zuplae\vendas\servlents\CategoriaServlents.class
+com\zuplae\vendas\models\Produto.class
+com\zuplae\vendas\models\Categoria.class
+com\zuplae\vendas\servlents\ProdutoServlents.class
