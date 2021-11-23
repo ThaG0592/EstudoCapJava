@@ -15,7 +15,7 @@ import jakarta.servlet.http.HttpServletResponse;
 public class ProdutoServlents extends HttpServlet {
 
     @Override
-    protected void doPost (HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         PrintWriter out = resp.getWriter();
         Produto prod1 = new Produto();
 
@@ -32,7 +32,7 @@ public class ProdutoServlents extends HttpServlet {
         }
         else{
             out.printf("Modulo Produtos - ProdModel = %s", prod1.getNome());
-        }     
+        }   
     }
     
 }
