@@ -1,4 +1,7 @@
-com\zuplae\vendas\servlents\CategoriaServlents.class
-com\zuplae\vendas\models\Produto.class
-com\zuplae\vendas\models\Categoria.class
+com\zuplae\vendas\servlents\CategoriaServlet.class
+com\zuplae\vendas\dao\ConnectionFactory.class
+com\zuplae\vendas\servlents\CategoriaReadServlet.class
 com\zuplae\vendas\servlents\ProdutoServlents.class
+com\zuplae\vendas\models\Produto.class
+com\zuplae\vendas\dao\CategoriaDao.class
+com\zuplae\vendas\models\Categoria.class
