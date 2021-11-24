@@ -2,7 +2,7 @@
 <c3p0-config>
     <default-config>
         <property name="driverClass">org.postgresql.Driver</property>
-        <property name="jdbcUrl">jdbc:postgresql://192.168.0.18:5432/postgres</property>
+        <property name="jdbcUrl">jdbc:postgresql://localhost:5432/postgres</property>
         <property name="user">postgres</property>
         <property name="password">123456</property>
 

@@ -1,9 +1,9 @@
-package com.form.atp056.servlents;
+package com.form.atp057.servlents;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import com.form.atp056.models.Produto;
+import com.form.atp057.models.Produto;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
