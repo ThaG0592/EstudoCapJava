@@ -1,12 +1,12 @@
-package com.zuplae.vendas.servlents;
+package com.form.atp056.servlents;
 
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
-import com.zuplae.vendas.dao.CategoriaDao;
-import com.zuplae.vendas.models.Categoria;
+import com.form.atp056.dao.CategoriaDao;
+import com.form.atp056.models.Categoria;
 
-import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -26,16 +26,9 @@ public class CategoriaServlet extends HttpServlet{
         int id = dao.insert(model);
 
         model.setId(id);
-        req.setAttribute("id", getID());
-        
-        RequestDispatcher rd = req.getRequestDispatcher("categoria-sucesso.jsp");
-        rd.forward(req, resp);
-        //PrintWriter out = resp.getWriter();
-        //out.printf("Categoria Salva com sucesso XML - Id gerado %d", model.getId());
-    }
 
-    private Object getID() {
-        return null;
+        PrintWriter out = resp.getWriter();
+        out.printf("Categoria Salva com sucesso XML - Id gerado %d", model.getId());
     }
     
 }
