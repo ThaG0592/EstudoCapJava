@@ -1,7 +1,8 @@
-com\zuplae\dao\ConnectionFactory.class
 com\zuplae\AppCategoria.class
 com\zuplae\AppConta.class
+com\zuplae\repository\ConnectionFactory.class
 com\zuplae\models\ContaCorrente.class
-com\zuplae\dao\ContaCorrenteDao.class
-com\zuplae\dao\CategoriaDao.class
+com\zuplae\repository\ContaCorrenteRepository.class
 com\zuplae\models\Categoria.class
+com\zuplae\repository\BaseRespository.class
+com\zuplae\repository\CategoriaRepository.class
