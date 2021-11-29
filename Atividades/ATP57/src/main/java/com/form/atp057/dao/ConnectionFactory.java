@@ -1,21 +1,17 @@
 package com.form.atp057.dao;
 
-import java.sql.Connection;
-import java.sql.SQLException;
-
-import javax.sql.DataSource;
-
-import com.mchange.v2.c3p0.ComboPooledDataSource;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 
 public class ConnectionFactory {
-	private DataSource dataSource;
+	private EntityManager entityManager;
 
-    public ConnectionFactory() {
-        ComboPooledDataSource pool = new ComboPooledDataSource();
-        this.dataSource = pool;
+    public ConnectionFactory(){
+        EntityManagerFactory factory = Persistence.createEntityManagerFactory("banco");
+        this.entityManager = factory.createEntityManager();
     }
-
-    public Connection getConnection() throws SQLException{        
-        return this.dataSource.getConnection();
+    public EntityManager getConnection(){
+        return entityManager;
     }
 }
