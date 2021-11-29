@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpringData</title>
+</head>
+<body>
+    <h1>SpringData</h1>
+    <h2>Lista de SpringData</h2>
+    
+    <a href="/SpringData/form">Cadastrar Novo</a>
+    <br />
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Tipo</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="s : ${SpringData}">
+                <td th:text="${s.id}"></td>
+                <td th:text="${s.nome}"></td>
+                <td th:text="${s.tipo}"></td>
+                <td th:text="${s.genero}"></td>
+                <td>
+                    <a th:href="@{'/springData/editar/'+${f.id}}">Editar</a> |
+                    <a th:href="@{'/springData/deletar/'+${f.id}}">Deletar</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
