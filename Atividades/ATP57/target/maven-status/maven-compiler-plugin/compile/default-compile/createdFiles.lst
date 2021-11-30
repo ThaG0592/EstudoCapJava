@@ -1,0 +1,4 @@
+com\form\atp057\models\Categoria.class
+com\form\atp057\models\ContaCorrente.class
+com\form\atp057\servlets\CategoriaServlet.class
+com\form\atp057\servlets\ContaCorrenteServlet.class

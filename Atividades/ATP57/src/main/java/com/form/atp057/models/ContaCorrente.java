@@ -1,16 +1,7 @@
 package com.form.atp057.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.persistence.GenerationType;
-
-@Entity
-@Table(name = "conta_corrente")
 public class ContaCorrente {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    
     private int id;
     private String nome;
     private String descricao;
