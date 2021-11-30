@@ -8,12 +8,12 @@
 		<version>2.6.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.zumplae</groupId>
-	<artifactId>filmes</artifactId>
+	<groupId>com.atp64</groupId>
+	<artifactId>SpringDATA</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>filmes</name>
-	<description>Filmes Spring MVC</description>
+	<name>SpringDATA</name>
+	<description>Web com Spring MVC</description>
 	<properties>
 		<java.version>16</java.version>
 	</properties>
@@ -26,10 +26,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
-		<dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
