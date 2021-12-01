@@ -2,8 +2,8 @@ package com.zumplae.filmes.repository;
 
 import com.zumplae.filmes.model.Filme;
 
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.PagingAndSortingRepository;
 
-public interface FilmeRepository extends CrudRepository<Filme,Integer> {
+public interface FilmeRepository extends PagingAndSortingRepository<Filme,Integer> {
     
 }
