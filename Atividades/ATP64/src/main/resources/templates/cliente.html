@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head th:replace="~{base::head(Cliente)}"></head>
+<body>
+    <header th:replace="~{base::cabecalho}"></header>
+    
+    <main>
+        <h1 class="titulo">Cliente</h1>
+        <h2>Lista de Cliente</h2>
+        
+        <a class="btn btn-success esquerda" href="/<!DOCTYPE html>
+<html lang="pt-BR">
+    <head th:replace="~{base::head(Cliente)}"></head>
+<body>
+    <header th:replace="~{base::cabecalho}"></header>
+    
+    <main>
+        <h1 class="titulo">Cliente</h1>
+        <h2>Lista de Cliente</h2>
+        
+        <a class="btn btn-success esquerda" href="/cliente/form">Cadastrar novo</a>
+        <br />
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nome</th>
+                    <th>Sobrenome</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="c : ${cliente}">
+                    <td th:text="${c.id}"></td>
+                    <td th:text="${c.nome}"></td>
+                    <td th:text="${c.sobrenome}"></td>
+                    <td>
+                        <a class="btn btn-warning" th:href="@{'/cliente/editar/'+${f.id}}">Editar</a>
+                        <a class="btn btn-danger" th:href="@{'/cliente/deletar/'+${f.id}}">Deletar</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>    
+</body>
+</html>
+© 2021 GitHub, Inc./form">Cadastrar novo</a>
+        <br />
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nome</th>
+                    <th>Sobrenome</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="f : ${Cliente}">
+                    <td th:text="${f.id}"></td>
+                    <td th:text="${f.nome}"></td>
+                    <td th:text="${f.sobrenome}"></td>
+                    <td>
+                        <a class="btn btn-warning" th:href="@{'/cliente/editar/'+${f.id}}">Editar</a>
+                        <a class="btn btn-danger" th:href="@{'/cliente/deletar/'+${f.id}}">Deletar</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>    
+</body>
+</html>

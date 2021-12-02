@@ -1,13 +1,12 @@
-package com.atp64.SpringDATA;
+package com.SPRING.ATP64;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 public class ServletInitializer extends SpringBootServletInitializer {
-
-	@Override
+    @Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(SpringDataApplication.class);
+        return application.sources(Atp64Application.class);
 	}
 
 }

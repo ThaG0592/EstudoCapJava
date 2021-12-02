@@ -1,13 +1,13 @@
-package com.atp64.SpringDATA;
+package com.SPRING.ATP64;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringDataApplication {
+public class Atp64Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringDataApplication.class, args);
+		SpringApplication.run(Atp64Application.class, args);
 	}
 
 }
