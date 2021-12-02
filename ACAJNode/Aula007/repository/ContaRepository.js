@@ -2,7 +2,7 @@ import ContaTable from './../db/ContaTable.js'
 
 class ContaRepository{
 
-async findAll(){
+    async findAll(){
         const lista = await ContaTable.findAll({raw:true});
         return lista;
     }
