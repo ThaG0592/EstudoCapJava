@@ -1,7 +1,6 @@
 {
-  "name": "atp73",
+  "name": "atp74",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,5 +11,7 @@
   "dependencies": {
     "pg": "^8.7.1",
     "sequelize": "^6.12.0-alpha.1"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }

@@ -1,4 +1,6 @@
-export class ContaRepository{
+import ContaTable from './../db/ContaTable.js'
+
+class ContaRepository{
 
 async findAll(){
         const lista = await ContaTable.findAll({raw:true});
