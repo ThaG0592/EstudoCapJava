@@ -1,13 +1,14 @@
 import Sequelize from 'sequelize';
 
 const Database = new Sequelize(
-    'postgres' //database
-    ,'postgres' //user
-    ,'123456' //senha
-    ,{
-        host :'localhost' //endereço do serve
-        ,port:5432 // porta do postgres
-        ,dialect: 'postgres'
+    'postgres', // database
+    'postgres', // user
+    '123456', // senha
+    {
+        host: '192.168.0.18', // endereco do server
+        port: 5432, // porta do postgres
+        dialect: 'postgres'
     }
 );
+
 export default Database;

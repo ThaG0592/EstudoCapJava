@@ -1,26 +1,26 @@
-
 import { Sequelize } from "sequelize";
-import { Database } from "/Database.js";
+import Database from "./Database.js";
 
-const ContaTabel = Database.define('conta',{
+const ContaTable = Database.define('conta',{
     id:{
-        type: Sequelize.INTEGER, 
+        type: Sequelize.INTEGER,
         allowNull: false,
         autoIncrement: true,
         primaryKey: true
     },
-    agencia:{
-        type: Sequelize.STRING,
-        allowNull: false,
-    },
     numero:{
-        type: Sequelize.STRING,
-        allowNull: false,
+        type:  Sequelize.STRING,
+        allowNull: false
+    },
+    agencia:{
+        type:  Sequelize.STRING,
+        allowNull: false
     },
     saldo:{
         type: Sequelize.FLOAT,
-        allowNull: false,
+        allowNull: false
     }
+});
 
-})
-export default ContaTabel;
+
+export default ContaTable;
