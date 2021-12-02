@@ -1,28 +1,26 @@
 package com.SpringDATA.atp62.repository;
 
-import com.SpringDATA.atp62.model.Clientes;
+import javax.persistence.EntityManager;
 
-import org.springframework.boot.CommandLineRunner;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+public abstract class CrudRepository <T>{
+    private EntityManager entityManager;
 
-@SpringBootApplication
-public class CrudRepository implements CommandLineRunner {
-    private Clientes repository;
-    
-    public CrudRepository(Clientes repository){
-        this.repository = repository;
+    public CrudRepository(){
+        this.entityManager = new ConnectionFactory().getConnection();
     }
-    public static void main(String[] args){
-        SpringApplication.run(CrudRepository.class, args);
-    }
-    @Override
-    public void run(String... args) throws Exception{
-        Clientes model = new Clientes();
-        model.setId(1);
-        model.setNome("Jose");
-        model.setSobrenome("João");
 
-        System.out.println(model);
+    public void create (T model){
+        this.entityManager.getTransaction().begin();
+        this.entityManager.persist(model);
+        this.entityManager.getTransaction().commit();
+    }
+
+    public EntityManager gEntityManager(){
+        return entityManager;
+    }
+    public void update(T model){
+        this.entityManager.getTransaction().begin();
+        this.entityManager.persist(model);
+        this.entityManager.getTransaction().commit();
     }
 }
