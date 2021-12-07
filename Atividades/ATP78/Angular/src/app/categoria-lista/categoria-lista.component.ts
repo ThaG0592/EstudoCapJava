@@ -1,3 +1,4 @@
+import { AngularServiceService } from './../services/angular-service.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./categoria-lista.component.css']
 })
 export class CategoriaListaComponent implements OnInit {
-
-  constructor() { }
+  lista: any[]
+  constructor(private angularServiceService:AngularServiceService) {
+    this.lista = [];
+    this.listar();
+  }
 
   ngOnInit(): void {
+  }
+
+  private listar(){
+    this.lista = this.angularServiceService.listar();
   }
 
 }

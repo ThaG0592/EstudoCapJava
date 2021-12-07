@@ -1,0 +1,27 @@
+<br>
+<br>
+<br>
+<br>
+<p>Lista de Categorias</p>
+
+<table = *ngIf="lista.length>0; else #listaVazia">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Tipo</th>
+      <th>Nome</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let a of lista" >
+      <td>{{a.id}}</td>
+      <td>{{a.nome}}</td>
+      <td>{{a.tipo}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<ng-template #listaVazia>
+<p>Nenhum Filme Cadastrado</p>
+</ng-template>
+
