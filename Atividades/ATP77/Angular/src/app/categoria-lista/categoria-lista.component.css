@@ -1,0 +1,22 @@
+table{
+  width: 60%;
+  margin: auto;
+  background: goldenrod;
+}
+thead{
+  background: orangered;
+  color: antiquewhite;
+  height: 2em;
+  text-transform: uppercase;
+}
+tbody{
+  font-size: 18px;
+}
+p{
+  background: orangered;
+  color: aliceblue;
+  width: 60%;
+  margin: auto;
+  text-transform: uppercase;
+  text-align: center;
+}
