@@ -6,34 +6,20 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-
+import lombok.Getter;
+import lombok.Setter;
 @Entity
 @Table(name = "springData")
 public class SpringData {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Getter @Setter
     private int id;
+
+    @Getter @Setter
     private String tipo;
+
+    @Getter @Setter
     private String nome;
-
-    public void setId(int id) {
-        this.id = id;
-    }
-    public int getId() {
-        return id;
-    }
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-    public String getNome() {
-        return nome;
-    }
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-    public String getTipo() {
-        return tipo;
-    }
-
     
 }
