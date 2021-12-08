@@ -13,10 +13,10 @@ export class AngularServiceService {
     this.url = 'http://localhost:8081/api/spring';
   }
 
-  salvar(angular:Angular):void{
-
+  salvar(angular:Angular):Observable<string>{
+    return this.httpClien.post(this.url, angular, {responseType: 'text'})
   }
-  listar():Observable<Angular[]>{
+  listar():Observable<Angular[]> {
     return this.httpClien.get<Angular[]>(this.url);
   }
 }

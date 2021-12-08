@@ -1,3 +1,4 @@
+import { Observable } from 'rxjs';
 import { Angular } from './../model/Angular';
 import { Component, OnInit } from '@angular/core';
 import { AngularServiceService } from '../services/angular-service.service';
@@ -14,12 +15,13 @@ export class CategoriaFormComponent implements OnInit {
 
   }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   salvar(){
-     this.angularServiceService.salvar(this.angular);
-     this.limpar();
+    let restorno = this.angularServiceService.salvar(this.angular).subscribe((msg) => {
+      console.log(msg);
+      this.limpar();
+    });
   }
   private limpar(){
     this.angular = {} as Angular;
